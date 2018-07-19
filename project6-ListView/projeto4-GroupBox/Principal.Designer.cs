@@ -91,6 +91,7 @@
             this.lsvNomes.TabIndex = 4;
             this.lsvNomes.UseCompatibleStateImageBehavior = false;
             this.lsvNomes.View = System.Windows.Forms.View.Details;
+            this.lsvNomes.DoubleClick += new System.EventHandler(this.lsvNomes_DoubleClick);
             // 
             // txtIdade
             // 

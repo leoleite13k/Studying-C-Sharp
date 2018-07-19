@@ -12,6 +12,8 @@ namespace projeto4_GroupBox
 {
     public partial class frmPincipal : Form
     {
+        private int iSelecionado = -1;
+
         public frmPincipal()
         {
             InitializeComponent();
@@ -27,8 +29,18 @@ namespace projeto4_GroupBox
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            if (iSelecionado > -1)
+            {
+                lsvNomes.Items[iSelecionado].SubItems[0].Text = txtNome.Text;
+                lsvNomes.Items[iSelecionado].SubItems[1].Text = txtIdade.Text;
+                iSelecionado = -1;
+                btnCadastrar.Text = "Cadastrar";
+                txtNome.Text = String.Empty;
+                txtIdade.Text = String.Empty;
+                return;
+            }
             ListViewItem lista = lsvNomes.Items.Add(txtNome.Text.Trim());
-            lista.SubItems.Add(new ListViewItem.ListViewSubItem(null,txtIdade.Text));
+            lista.SubItems.Add(new ListViewItem.ListViewSubItem(null,txtIdade.Text.Trim()));
             txtNome.Text = String.Empty;
             txtIdade.Text = String.Empty;
         }
@@ -75,6 +87,15 @@ namespace projeto4_GroupBox
             }
             int iPosicao = lsvNomes.SelectedIndices[0];
             lsvNomes.Items.RemoveAt(iPosicao);
+        }
+
+        private void lsvNomes_DoubleClick(object sender, EventArgs e)
+        {
+            if (lsvNomes.SelectedIndices.Count < 1) return;
+            iSelecionado = lsvNomes.SelectedIndices[0];
+            txtNome.Text = lsvNomes.Items[iSelecionado].SubItems[0].Text;
+            txtIdade.Text = lsvNomes.Items[iSelecionado].SubItems[1].Text;
+            btnCadastrar.Text = "Alterar";
         }
     }
 }
