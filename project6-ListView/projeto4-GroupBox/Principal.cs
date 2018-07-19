@@ -15,17 +15,29 @@ namespace projeto4_GroupBox
         public frmPincipal()
         {
             InitializeComponent();
+            carregaLista();
+        }
+
+        private void carregaLista()
+        {
+            lsvNomes.Clear();
+            lsvNomes.Columns.Insert(0,"Nome", 250,HorizontalAlignment.Left);
+            lsvNomes.Columns.Insert(1,"Idade",100, HorizontalAlignment.Right);
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            cmbNomes.Items.Add(txtNome.Text);
-            btnLimpar_Click(btnLimpar, new EventArgs());
+            ListViewItem lista = lsvNomes.Items.Add(txtNome.Text.Trim());
+            lista.SubItems.Add(new ListViewItem.ListViewSubItem(null,txtIdade.Text));
+            txtNome.Text = String.Empty;
+            txtIdade.Text = String.Empty;
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Text = String.Empty;
+            txtIdade.Text = String.Empty;
+            lsvNomes.Items.Clear();
         }
 
         private void txtNome_Validating(object sender, CancelEventArgs e)
@@ -33,15 +45,36 @@ namespace projeto4_GroupBox
             if (txtNome.Text.Length < 3)
             {
                 MessageBox.Show("Nome Inválido !");
+                txtNome.Focus();
             }
         }
 
         private void txtNome_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if(e.KeyCode == Keys.Enter)
             {
-                btnCadastrar_Click(btnCadastrar,new EventArgs());
+                btnCadastrar_Click(btnCadastrar, new EventArgs());
             }
+        }
+
+        private void txtIdade_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtIdade.Text.Trim().Equals(String.Empty))
+            {
+                MessageBox.Show("Idade Inválida !");
+                txtIdade.Focus();
+            }
+        }
+
+        private void btnRemoverPessoa_Click(object sender, EventArgs e)
+        {
+            if (lsvNomes.SelectedIndices.Count < 1)
+            {
+                MessageBox.Show("Nenhuma Pessoas Selecionada!");
+                return;
+            }
+            int iPosicao = lsvNomes.SelectedIndices[0];
+            lsvNomes.Items.RemoveAt(iPosicao);
         }
     }
 }

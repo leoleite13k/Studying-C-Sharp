@@ -18,3 +18,13 @@ C:\Users\leona\source\repos\projeto5-ComboBox\projeto4-GroupBox\obj\Debug\projet
 C:\Users\leona\source\repos\projeto5-ComboBox\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.csproj.CoreCompileInputs.cache
 C:\Users\leona\source\repos\projeto5-ComboBox\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.exe
 C:\Users\leona\source\repos\projeto5-ComboBox\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.pdb
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\bin\Debug\projeto4-GroupBox.exe.config
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\bin\Debug\projeto4-GroupBox.exe
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\bin\Debug\projeto4-GroupBox.pdb
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.csprojAssemblyReference.cache
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4_GroupBox.frmPincipal.resources
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4_GroupBox.Properties.Resources.resources
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.csproj.GenerateResource.cache
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.csproj.CoreCompileInputs.cache
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.exe
+C:\Studying-C-Sharp\project6-ListView\projeto4-GroupBox\obj\Debug\projeto4-GroupBox.pdb

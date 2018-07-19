@@ -32,7 +32,10 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.cmbNomes = new System.Windows.Forms.ComboBox();
+            this.lsvNomes = new System.Windows.Forms.ListView();
+            this.txtIdade = new System.Windows.Forms.TextBox();
+            this.lblIdade = new System.Windows.Forms.Label();
+            this.btnRemoverPessoa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,15 +50,16 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(25, 62);
+            this.txtNome.MaxLength = 150;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(289, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.Size = new System.Drawing.Size(232, 20);
+            this.txtNome.TabIndex = 0;
             this.txtNome.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNome_KeyUp);
             this.txtNome.Validating += new System.ComponentModel.CancelEventHandler(this.txtNome_Validating);
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(320, 62);
+            this.btnCadastrar.Location = new System.Drawing.Point(369, 62);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 2;
@@ -65,7 +69,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(401, 62);
+            this.btnLimpar.Location = new System.Drawing.Point(450, 62);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 3;
@@ -73,22 +77,57 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // cmbNomes
+            // lsvNomes
             // 
-            this.cmbNomes.BackColor = System.Drawing.SystemColors.Info;
-            this.cmbNomes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbNomes.FormattingEnabled = true;
-            this.cmbNomes.Location = new System.Drawing.Point(25, 103);
-            this.cmbNomes.Name = "cmbNomes";
-            this.cmbNomes.Size = new System.Drawing.Size(289, 21);
-            this.cmbNomes.TabIndex = 4;
+            this.lsvNomes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lsvNomes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lsvNomes.FullRowSelect = true;
+            this.lsvNomes.GridLines = true;
+            this.lsvNomes.Location = new System.Drawing.Point(25, 102);
+            this.lsvNomes.MultiSelect = false;
+            this.lsvNomes.Name = "lsvNomes";
+            this.lsvNomes.Size = new System.Drawing.Size(500, 232);
+            this.lsvNomes.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.lsvNomes.TabIndex = 4;
+            this.lsvNomes.UseCompatibleStateImageBehavior = false;
+            this.lsvNomes.View = System.Windows.Forms.View.Details;
+            // 
+            // txtIdade
+            // 
+            this.txtIdade.Location = new System.Drawing.Point(263, 62);
+            this.txtIdade.Name = "txtIdade";
+            this.txtIdade.Size = new System.Drawing.Size(100, 20);
+            this.txtIdade.TabIndex = 1;
+            this.txtIdade.Validating += new System.ComponentModel.CancelEventHandler(this.txtIdade_Validating);
+            // 
+            // lblIdade
+            // 
+            this.lblIdade.AutoSize = true;
+            this.lblIdade.Location = new System.Drawing.Point(260, 46);
+            this.lblIdade.Name = "lblIdade";
+            this.lblIdade.Size = new System.Drawing.Size(34, 13);
+            this.lblIdade.TabIndex = 6;
+            this.lblIdade.Text = "Idade";
+            // 
+            // btnRemoverPessoa
+            // 
+            this.btnRemoverPessoa.Image = global::projeto4_GroupBox.Properties.Resources.btnRemover;
+            this.btnRemoverPessoa.Location = new System.Drawing.Point(450, 340);
+            this.btnRemoverPessoa.Name = "btnRemoverPessoa";
+            this.btnRemoverPessoa.Size = new System.Drawing.Size(75, 42);
+            this.btnRemoverPessoa.TabIndex = 7;
+            this.btnRemoverPessoa.UseVisualStyleBackColor = true;
+            this.btnRemoverPessoa.Click += new System.EventHandler(this.btnRemoverPessoa_Click);
             // 
             // frmPincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 182);
-            this.Controls.Add(this.cmbNomes);
+            this.ClientSize = new System.Drawing.Size(539, 394);
+            this.Controls.Add(this.btnRemoverPessoa);
+            this.Controls.Add(this.lblIdade);
+            this.Controls.Add(this.txtIdade);
+            this.Controls.Add(this.lsvNomes);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtNome);
@@ -107,7 +146,10 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.ComboBox cmbNomes;
+        private System.Windows.Forms.ListView lsvNomes;
+        private System.Windows.Forms.TextBox txtIdade;
+        private System.Windows.Forms.Label lblIdade;
+        private System.Windows.Forms.Button btnRemoverPessoa;
     }
 }
 
