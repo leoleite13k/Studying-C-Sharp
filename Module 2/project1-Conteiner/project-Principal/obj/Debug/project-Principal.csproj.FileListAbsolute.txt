@@ -1,0 +1,10 @@
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\bin\Debug\project-Principal.exe.config
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\bin\Debug\project-Principal.exe
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\bin\Debug\project-Principal.pdb
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project-Principal.csprojAssemblyReference.cache
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project_Principal.Conteiners.resources
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project_Principal.Properties.Resources.resources
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project-Principal.csproj.GenerateResource.cache
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project-Principal.csproj.CoreCompileInputs.cache
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project-Principal.exe
+C:\Studying-C-Sharp\Module 2\project1-Conteiner\project-Principal\obj\Debug\project-Principal.pdb

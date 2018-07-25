@@ -1,0 +1,12 @@
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\bin\Debug\projeto7-From.exe.config
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\bin\Debug\projeto7-From.exe
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\bin\Debug\projeto7-From.pdb
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7-From.csprojAssemblyReference.cache
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7_From.frmCadPessoas.resources
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7_From.frmCadVeiculo.resources
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7_From.Properties.Resources.resources
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7-From.csproj.GenerateResource.cache
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7-From.csproj.CoreCompileInputs.cache
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7-From.exe
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7-From.pdb
+C:\Users\leona\source\repos\projeto7-From\projeto7-From\obj\Debug\projeto7_From.frmPrincipal.resources
